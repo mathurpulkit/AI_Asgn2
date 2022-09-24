@@ -16,6 +16,6 @@ using namespace std;
 // input: graph, starting point
 // output: path
 // declaration for a_star function
-vector<int> a_star(vector<vector<int>>, int);
+vector<int> a_star(vector<vector<int>>, int, int&);
 
 #endif

@@ -16,7 +16,7 @@ struct gnodepqueue {
 
 // implement A* search algorithm, return the path
 // use prim function from mst.h as heuristic
-vector<int> a_star(vector<vector<int>> graph, int startingPoint) {
+vector<int> a_star(vector<vector<int>> graph, int startingPoint, int &finalcost) {
     // create a priority queue, which is a min heap, represents the fringe list
     priority_queue<gnode, vector<gnode>, gnodepqueue> fringe;
     // create a set to store the visited paths
@@ -34,7 +34,11 @@ vector<int> a_star(vector<vector<int>> graph, int startingPoint) {
         // check if path is complete
         if (path.size() == graph.size()) {
             // add the starting point to the path
-            path.push_back(startingPoint);
+            // path.push_back(startingPoint);
+            finalcost = 0;
+            for (int i = 0; i < path.size() - 1; i++) {
+                finalcost += graph[path[i]][path[i + 1]];
+            }
             return path;
         }
         int lastNode = path.back();
