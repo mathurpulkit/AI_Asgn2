@@ -61,13 +61,15 @@ int main(int argc, char *argv[]) {
         readInputFile(inputFile, graph);
     }
     // print the graph
-    printGraph(graph);
+    // printGraph(graph); // used during debugging
     // solve the TSP problem
     // get the path from the a_star function
-    vector<int> path = a_star(graph, startingPoint);
+    int finalcost = 0;
+    vector<int> path = a_star(graph, startingPoint, finalcost);
     // print the solution
     for (int i = 0; i < path.size(); i++) {
         cout << path[i] << " ";
     }
+    cout << endl << "Path Cost: " << finalcost << endl;
     return 0;
 }
