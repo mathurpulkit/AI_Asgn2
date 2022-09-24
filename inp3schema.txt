@@ -1,0 +1,20 @@
+0	Arad
+1	Oradea
+2	Zerind
+3	Sibiu
+4	Timisoara
+5	Lugoj
+6	Mehadia
+7	Dobreta
+8	Fagaras
+9	Rimnicu Vilcea
+10	Pitesti
+11	Craiova
+12	Bucharest
+13	Giurgiu
+14	Urziceni
+15	Hirsova
+16	Eforie
+17	Vaslui
+18	Iasi
+19	Neamt
