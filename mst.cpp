@@ -3,7 +3,6 @@
 using namespace std;
 
 int prim(vector<vector<int>> graph, int startingPoint) {
-    // use prim's algorithm to find the minimum spanning tree
     // initialize the minimum spanning tree
     vector<vector<int>> mst(graph.size(), vector<int>(graph.size(), 0));
     // initialize the set of visited nodes
