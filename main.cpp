@@ -1,5 +1,3 @@
-// program to take undirected graph and the starting point as an input, solve the TSP problem, and print the solution
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -60,10 +58,6 @@ int main(int argc, char *argv[]) {
         inputFile.open(filename);
         readInputFile(inputFile, graph);
     }
-    // print the graph
-    // printGraph(graph); // used during debugging
-    // solve the TSP problem
-    // get the path from the a_star function
     int finalcost = 0;
     vector<int> path = a_star(graph, startingPoint, finalcost);
     // print the solution
