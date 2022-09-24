@@ -21,7 +21,7 @@ void readInputFile(ifstream &inp_file, vector<vector<int>> &graph) {
         for (string line; iss >> line;) {
             string temp = line;
             if (temp == "inf") {
-                graph[i].insert(graph[i].begin() + j, numeric_limits<int>::max());
+                graph[i].insert(graph[i].begin() + j, MAXINT);
             }
             else {
                 graph[i].insert(graph[i].begin() + j, stoi(temp));

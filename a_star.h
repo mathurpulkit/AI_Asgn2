@@ -8,7 +8,7 @@
 #include <unordered_set>
 #include"mst.h"
 
-
+const int MAXINT = numeric_limits<int>::max();
 
 using namespace std;
 
